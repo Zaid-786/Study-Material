@@ -1,0 +1,20 @@
+
+/* we have a container that name #importance1 in this container backgroundcolor we gave  red and then aqua and then gave green then css checking give (id,class,element,order) but !important rule override all of them rule 
+  */
+
+#importance1
+{
+    border:1px solid black;
+    width: 500px;
+    background-color: red !important;
+}
+
+#importance1
+{
+    background-color: aqua;
+}
+
+#importance1
+{
+    background-color:green;
+}

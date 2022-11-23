@@ -1,0 +1,45 @@
+.div1 {
+  border: 1px solid black;
+
+  height: 500px;
+
+  /* Direction - Top to Bottom (this is default) */
+  /* background-image:linear-gradient(pink ,yellow ); */
+
+
+  /* Direction - Left to Right
+The following example shows a linear gradient that starts from the left. It starts red, transitioning to yellow: */
+  /* background-image: linear-gradient(to right, red , yellow); */
+
+
+
+  /* Direction -  Right to Left */
+  /* The following example shows a linear gradient that starts from the right. It starts red, transitioning to yellow: */
+  /* background-image: linear-gradient(to left, red , yellow); */
+
+
+
+  /* /* Direction - Diagonal
+You can make a gradient diagonally by specifying both the horizontal and vertical starting positions.
+The following example shows a linear gradient that starts at top left (and goes to bottom right). It starts black, transitioning to green: */
+  /* background-image: linear-gradient(to bottom right, black, green); */
+
+
+
+  /* 
+ Using Angles
+ If you want more control over the direction of the gradient, you can define an angle, instead of the predefined directions (to bottom, to top, to right, to left, to bottom right, etc.). A value of 0deg is equivalent to "to top". A value of 90deg is equivalent to "to right". A value of 180deg is equivalent to "to bottom". */
+/* background-image: linear-gradient(-90deg,black,red); */
+
+
+/* Using Multiple Color Stops
+The following example shows a linear gradient (from top to bottom) with multiple color stops:
+background-image: linear-gradient(to right ,red,blue,green); */
+
+/* Radial Gradients (defined by their center) */
+background-image:radial-gradient(circle,red,green,blue,yellow,purple,white,black);
+
+
+
+
+}

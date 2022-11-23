@@ -1,0 +1,21 @@
+
+
+
+#div1
+{
+    column-count: 3;             /* column-count    	    Specifies the number of columns an element should be divided into */     
+    column-gap:50px;              /*column-gap      	    Specifies the gap between the columns*/
+   
+    /* column-rule-style: solid;
+    column-rule-width: 5px;
+    column-rule-color: green; */
+
+    column-rule: 2px solid green;
+
+}
+
+
+
+h1{
+    column-span: all;                     /* column-span 	   Specifies how many columns an element should span across    */         
+}

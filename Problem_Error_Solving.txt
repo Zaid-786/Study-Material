@@ -1,0 +1,17 @@
+
+
+problem: Uncaught SyntaxError: import declarations may only appear at top level of a module
+
+solved=>  
+    	  1) It is still experimental on Firefox (from v54): You have to set to true the variable 		    	dom.moduleScripts.enabled in about:config
+	    search on browser and put on there  about:config
+	    
+	 
+	  2) Add type="module" to your script tag where you import the js file
+	       <script type="module" src="appthatimports.js"></script>
+
+	 
+	  3) Import files have to be prefixed (./, /, ../ or http:// before)
+	 	 import * from "./mylib.js"
+		
+		note:- you should write extension with file which files you are imported

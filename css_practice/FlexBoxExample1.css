@@ -1,0 +1,158 @@
+.parent-Container
+{    margin-top:20px;
+    padding: 20px;
+    background-color:indianred;
+    height:50vh;
+
+    /* we will used flex module */
+    display:flex;
+
+
+    /* The flex-direction property defines in which direction the container wants to stack the flex items.(in the form of row,row-reverse,column,column-reverse etc) */ 
+    /* flex-direction: row;                 direction flow in the row form  */
+    /* flex-direction: row-reverse;        direction flow in the row-reverse */
+
+    /* flex-direction: column;                direction flow in the column form   */
+    /* flex-direction: column-reverse;             direction flow in the column-reverse order form */
+
+
+
+    /* The flex-wrap property specifies whether the flex items should wrap or not.(means thats items adjust according parent container size and make responsive) */
+    /* flex-wrap: no-wrap;            The nowrap value specifies that the flex items will not wrap (this is default): */
+    flex-wrap:wrap;              /*  The wrap value specifies that the flex items will wrap if necessary:(means that the flex items will responsive) */
+    /* flex-wrap:wrap-reverse;           The wrap-reverse value specifies that the flexible items will wrap if necessary, in reverse order: */
+
+
+    /* The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties. */
+    /* flex-flow:row wrap; */
+
+    /* works on x-axis means horizontal flow */
+    /* The justify-content property is used to align the flex items: */
+    /* justify-content:center;             The center value aligns the flex items at the center of the container: */
+    /* justify-content:flex-start;         The flex-start value aligns the flex items at the beginning of the container (this is default): */
+    /* justify-content:flex-end;           The flex-end value aligns the flex items at the end of the container: */
+    /* justify-content:space-around;       The space-around value displays the flex items with space before, between, and after the lines: */
+     /* justify-content:space-between;         The space-between value displays the flex items with space between the lines: */
+
+
+
+    /* The align-items property is used to align the flex items. */
+        /* align-items:stretch;           The stretch value stretches the flex items to fill the container (this is default): */
+        /* align-items:center;            The center value aligns the flex items in the middle of the container: */
+        /* align-items: flex-start;       The flex-start value aligns the flex items at the top of the container:*/
+        /* align-items:flex-end;          The flex-end value aligns the flex items at the bottom of the container: */
+
+        /* align-items:stretch; */
+   
+
+
+            /* works on y-axis means vertically flow */
+        /* The align-content property is used to align the flex lines. */
+   
+
+        justify-content:center;
+        align-items:center;
+
+
+
+
+    }
+
+
+
+.child-container
+{
+    padding: 20px;
+    background-color:wheat;
+    margin: 20px;
+    text-align:center;
+    width: 100px;
+    
+}
+
+
+
+
+
+
+
+.second-parent
+{
+    margin: 50px;
+
+    padding: 20px;
+    background-color:yellow;
+    /* width: 100%; */
+    display: flex;
+    justify-content:space-around;
+
+}
+
+
+.second-child{
+    margin: 50px;
+    padding: 30px;
+    background-color: green;
+    width: 100px;
+    /* justify-content:flex-end;
+    align-items: center; */
+}
+
+
+/* The order property specifies the order of a flexible item relative to the rest of the flexible items inside the same container. */
+/*
+
+#one
+{
+    order: 3;
+}
+
+#two{
+    order: 2;
+}
+
+#three{
+    order: 1;
+} */
+
+
+
+/* The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container.
+Note: If the element is not a flexible item, the flex-grow property has no effect. */
+/* #one
+{
+    flex-grow: 1;
+}
+
+#two{
+    flex-grow: 1;
+}
+
+#three{
+    flex-grow: 3;
+} */
+
+
+
+
+/* The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container.(thats mean small rezie according thier sibling block size)
+Note: If the element is not a flexible item, the flex-shrink property has no effect. */
+/* #one
+{
+    flex-shrink: 5;
+} */
+
+
+
+/* The flex-basis property specifies the initial length of a flexible item.
+Note: If the element is not a flexible item, the flex-basis property has no effect. */
+/* 
+#two 
+{
+    flex-basis:300px;
+} 
+*/
+
+
+
+

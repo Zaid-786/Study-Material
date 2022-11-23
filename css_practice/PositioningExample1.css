@@ -1,0 +1,62 @@
+
+
+#parent
+ {
+    border: 1px solid black;
+    margin: 100px;
+    padding:20px;
+    position:relative;
+
+}
+
+#one
+{
+    border: 1px solid black;
+    padding:50px;
+    width:100px;
+    height:100px;
+    background-color: red;
+    display:inline-block;
+
+    /* fixed 	        The element is positioned relative to the browser window 	 */
+      position:fixed;      /* in css,position:fixed property is used to fixed position according viewport(browser window) */
+    bottom: 10px;
+    right: 10px; 
+
+}
+
+#two
+{
+    border: 1px solid black;
+    padding:50px;
+    width:100px;
+    height:100px;
+    background-color: green;
+    display: inline-block;
+
+    /* relative    	The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position 	 
+    position:relative;      /* in css,position property is used to give position but position:relative value moved your element but dont leave thier position */
+    /* top:50px;
+    left:50px; */ 
+
+
+
+}
+
+#three
+{
+    border: 1px solid black;
+    padding:50px;
+    width:100px;
+    height:100px;
+    background-color:yellow;
+    display: inline-block;
+
+
+    /* absolute    	The element is positioned relative to its first positioned (not static) ancestor element 	 */
+     position: absolute;          /*   in css,position property is used to give position but position:absolute  value moved your element but leave thier position  according their parent position        */
+    top: 10px;
+    right: 10px; 
+
+}
+

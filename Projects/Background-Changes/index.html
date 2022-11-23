@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-Changes</title>
+</head>
+
+<style>
+        body{                                                /* body style */
+            margin:0 auto;
+            padding: 20px 100px;
+        }
+
+        h1{                                                  /* h1 style*/
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        img{                                                 /* img style */
+            width: 100%;
+        }
+
+        P{                                                   /* p style */
+            text-align:justify;
+            font-size:18px;
+        }
+
+        .btn{                                                /* buttons class style */
+            width:20px;
+            height:20px;
+            display: inline-block;
+            border: 2px solid grey;
+            border-radius:50%;
+            cursor: pointer;
+        }
+
+
+        #color-switcher{                                    /* color switcher div style*/
+
+            text-align: right;
+
+        }
+
+
+
+        #white{                                             /* white id set white-background in button display*/
+            background-color:white;
+        }
+
+        #aqua{                                              /* aqua id set aqua-background in button display */
+            background-color:aqua;
+        }
+
+        #green{                                             /* green id set green-background in button display */
+            background-color:green;
+        }
+
+        #black{                                             /* black id set black-background in button display */
+            background-color:black;
+        }
+
+</style>
+
+
+
+
+<body>
+
+    <!-- take 4 spans for buttons and clicked on buttons change background color -->
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('white')"></span>
+        <span class="btn" id="aqua"  onclick="changeBG('aqua')"></span>
+        <span class="btn" id="green" onclick="changeBG('green')"></span>
+        <span class="btn" id="black" onclick="changeBG('black')"></span>
+    </div>
+
+
+    <!-- take one main heading  -->
+    <h1 class="textColor">About Us</h1> 
+
+    <!-- take one img show on display -->
+    <img src="/images/About_US.jpg" alt="about us image">
+
+    <!-- take paragraph -->
+    <p class="textColor">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At itaque autem, dolor optio perferendis cum ab iusto velit est magni voluptatem laborum officiis ipsam omnis voluptates! Natus velit consectetur reprehenderit error dolorum non nulla culpa necessitatibus ipsum magnam repellat, ea ipsa libero atque. Voluptatibus quae eos asperiores ipsa, amet excepturi reprehenderit quasi blanditiis assumenda ea fugiat nesciunt placeat nisi pariatur laborum cum possimus ab harum vitae ducimus quibusdam eveniet. Quisquam obcaecati ex illum et delectus optio, provident enim ad odit placeat laudantium. Ullam voluptatibus veritatis, quis, quidem aliquid expedita, esse omnis dignissimos corrupti a ipsum? Dolorum earum fugit facilis totam dolorem id itaque, facere eius quam eligendi ipsa consequuntur, dicta exercitationem. Sint nisi laudantium asperiores provident reiciendis, nesciunt repudiandae, nemo cupiditate, cumque quae assumenda! Excepturi iste perferendis deleniti numquam hic adipisci esse? Atque, alias qui, iste ut voluptatem quis dolor quae neque officiis veniam voluptas libero nesciunt reiciendis natus ipsa aperiam fugiat ex quos incidunt beatae corrupti totam doloremque. Non vel in adipisci vero praesentium vitae quaerat aliquid! Quaerat blanditiis itaque perspiciatis, dolorem debitis voluptatum distinctio veniam exercitationem est at fugit necessitatibus maxime accusamus dolores, sit incidunt nihil aperiam rem veritatis aliquam earum, minus vero hic quas! Adipisci temporibus provident ea voluptate. Doloribus asperiores aliquid laudantium distinctio suscipit repudiandae corrupti dignissimos placeat ipsam, voluptatibus quos, animi officiis fugit similique reiciendis praesentium illum nihil dicta? Quasi soluta repellat facere, ratione deserunt omnis dicta cumque impedit eligendi perspiciatis doloremque esse laudantium labore molestiae facilis voluptatem animi, doloribus autem quo distinctio! Inventore est iste odio, cumque quos hic id itaque error nihil iusto quisquam. Doloremque, earum architecto praesentium dolore doloribus consectetur modi culpa quaerat in, accusamus nam quia, explicabo quisquam impedit. Vero alias sed excepturi quis ad! Eos, unde autem necessitatibus iure consequatur provident doloremque quidem perspiciatis optio nemo neque illo, repellat amet! Expedita vero consequatur vel facere animi nostrum necessitatibus atque eum quibusdam dicta maxime, voluptate molestiae sed ipsam sit magni possimus alias quis eaque ad, modi repudiandae quas. Sequi molestias hic suscipit ipsum eaque a iste modi amet. Cum alias aliquam beatae odio accusantium repellat voluptates mollitia! Debitis nam tempora aliquam ex cumque non aliquid itaque labore minus tenetur dignissimos dolore necessitatibus, blanditiis, veritatis impedit perspiciatis quo ducimus inventore porro officia magnam explicabo? Cupiditate repudiandae aliquid necessitatibus officiis eum, aspernatur molestiae corrupti modi cum architecto praesentium pariatur nisi doloremque, ipsam ullam tempore fuga aut eligendi nostrum explicabo nulla cumque! Facilis quis impedit praesentium inventore dolore in illum nobis vel nesciunt, cupiditate obcaecati ipsa! Possimus sunt atque nulla a at cupiditate ducimus deleniti ad. Libero, expedita. Deleniti eum eius placeat asperiores dicta natus. Totam sit quisquam maxime velit fuga laboriosam nisi iste ex suscipit corrupti eveniet architecto repudiandae optio ipsum deserunt eius mollitia dolore rem, modi, nemo laudantium dolor explicabo magni ipsa! Distinctio asperiores perferendis natus, commodi itaque odit debitis dolorum maxime, sint veritatis cum iste, quos sunt? Totam quod doloribus sed magni optio eveniet quia voluptatem reiciendis, similique eius velit? Iusto, voluptatum molestias. Sit perspiciatis beatae quisquam aliquid aperiam nulla fugit.
+    </p>
+
+
+
+<script>
+
+        function changeBG(color)                                                    // we created changeBG() function with arguments which passed by at calling this function on onclick event       
+        {
+                document.body.style.background=color;                               // set background color by this statement
+
+                let text=document.getElementsByClassName("textColor");              // we selected textarea of h1 tag and p tage by className (textColor)
+                if(color=="black")                                                  // check condition if background color is black then <h1> and <p> textarea color will be white
+                {
+                    for(let elm of text)                                            // getElementsByClassName is produce a array and stored in it . and by loop we accessed every elements of array and change the color.
+                    {
+                        elm.style.color="white";
+                    }
+                }
+                else{                                                               // if condition is false then <h1> and <p> tages textarea color is black
+                        for(let elm of text)                                        
+                        {
+                            elm.style.color="black";
+                        }
+                }
+        }
+
+</script>
+
+
+
+</body>
+</html>

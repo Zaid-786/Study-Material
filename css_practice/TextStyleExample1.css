@@ -1,0 +1,92 @@
+
+
+
+.text1
+{
+    border: solid black;
+    width: 500px;
+    color: blue;
+    text-align: justify;            /* we can used various value for text-align   like(left means text starts with leftside,right means text starts with rightside,center means text starts with center,justify means text cover all space area in the block ) */
+
+    text-decoration:underline;    /*css decoration properties are used to define your text like(underline,overline,none,line-through) */
+
+}
+
+
+.text2
+{
+    border: solid black;
+    width: 600px;
+    margin-top:20px;
+
+    width: 500px;
+
+    direction:ltr;              /* css direction properties are used to text align to show rtl and ltr */
+    
+    text-transform: capitalize;     /*css text-transform properties are used to define your text like(uppercase,lowercase,capitalize etc.) */
+
+    line-height:30px ;              /*css line-height properties are used to give height among text lines */
+
+    text-indent: 50px;               /*css text-indent properties are used to give space starting from paragraph */
+
+    word-spacing: 20px;             /*css word-spacing properties are used to give spacing among words*/
+
+}
+
+
+
+.text3
+{
+    border: solid black;
+    margin-top: 20px;
+    width: 500px;
+    height: 300px;
+
+    letter-spacing:5px;         /*css letter-spacing properties are used to give spacing among word of letters */
+
+}
+
+
+
+
+
+.text4
+{
+    border:solid black;
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+
+    word-wrap: break-word;           /*css word-wrap properties are used to break the line and words that adjust under a block  The CSS word-break property specifies line breaking rules. */
+}
+
+
+
+
+#shadow1
+{
+    font-size:70px;
+   
+        /*horizontal vertical blur color */
+    text-shadow:10px 5px 5px red;
+}
+
+
+
+
+#rm1
+{
+    border:1px solid;
+    width: 500px;
+    font-size:30px;
+
+    writing-mode:vertical-lr ;
+}
+
+
+/* CSS Writing Mode
+
+The CSS writing-mode property specifies whether lines of text are laid out horizontally or vertically.
+
+Some text with a span element with a vertical-rl writing-mode. */
+

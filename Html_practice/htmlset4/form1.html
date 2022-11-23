@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- <style>
+    .form_id
+    {
+        display:flex;
+        justify-content:center;
+        background-color:rgb(223, 218, 205);
+    }
+</style> -->
+    
+</head>
+<body>
+    
+<div class="form_id">
+<form action="#">
+  <h1>Simple Form</h1>
+
+  <!-- <input type="text"> this tag is used for text -->
+<label for="name1">Name<br>
+    <input type="text" name="name" id="name1">
+</label>
+<br>
+
+
+  <!-- <input type="email"> this tag is used for email -->
+<br>
+<label for="email_1">Email<br>
+    <input required type="email" name="email" id="email_1" placeholder="abc@example.com">
+</label>
+<br>
+
+
+  <!-- <input type="password"> this tag is used for password -->
+<br>
+<label for="pass1">Password<br>
+<input required type="password" name="pass" id="pass1" >
+</label>
+<br>
+
+
+
+  <!-- <input type="tel"> this tag is used for mobile number field -->
+<br>
+<label for="mobile1">Mobile_no<br>
+    <input type="tel " name="mobile" id="mobile1" placeholder="123-654-5678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</label>
+<br>
+
+
+
+  <!-- <input type="radio"> this tag is used for radio button-->
+<br>
+ <label for="m1">male 
+     <input type="radio" name="status" id="m1">
+ </label>
+ <label for="f1">female 
+    <input type="radio" name="status" id="f1">
+</label>
+<br>
+
+
+
+  <!-- <textarea> this tag is used for textarea means address place -->
+<br>
+<label for="msg">Address</label><br>
+<textarea name="message" id="msg">
+</textarea>
+<br>
+
+
+  <!-- <input type="date"> this tag is used for date -->
+<br>
+<label for="date">Date
+    <input type="date" name="date" id="d1">
+</label>
+<br>
+
+
+  <!-- <input type="datetime-local"> this tag is used for date and time  -->
+<br>
+<label for="d2">Schedule an appointment(date and time)<br>
+    <input type="datetime-local" name="date_time" id="d2">
+    </label>
+<br>
+
+
+
+  <!-- <input type="search"> this tag is used for search -->
+<br>
+<label for="srch">search
+    <input type="search" name="gsearch" id="srch">
+</label>
+<br>
+
+
+
+  <!-- <input type="number"> this tag is used for number -->
+<br>
+<label for="num1">how many days in a week do u exercise?(between 0 to 7)<br>
+    <input type="number" name="number" id="num1" min="0" max="7">
+</label>
+<br>
+
+
+  <!-- <input type="color"> this tag is used for color-->
+<br>
+<label for="f1">favourite color<br>
+    <input type="color" name="favourite_color" id="f1">
+</label>
+<br>
+
+
+
+  <!-- <input type="range"> this tag is used for range -->
+<br>
+<label for="fit1">range(between 0 to 5)<br>
+    <input type="range" name="fit" id="fit1" min="0" max="5">
+</label>
+<br>
+
+
+<!-- <fieldset> this tag is used for cover all tag which within in this tag-->
+<fieldset>                      
+<legend>Uploads:</legend>
+
+  <!-- <input type="file"> this tag is used for file uploads -->
+<br>
+<label for="file1">select a file<br>
+    <input type="file" name="myfiles" id="file1">
+</label>
+<br>
+
+<br>
+<label for="file2">select one and more file<br>
+    <input type="file" name="myfiles1" id="file2" multiple="multiple">
+</label>
+</fieldset>
+<br>
+
+
+  <!-- <select> this tag is used for selected multiple  option-->
+<br>
+<label for="occupation1">Occupation list</label><br>
+<select name="occupation" id="occupation1">
+    <option value="student">Student</option>
+    <option value="professional">Professional</option>Student</option>
+    <option value="doctor">Doctor</option>
+    <option value="engineering">Engineering</option>
+
+</select>
+<br>
+
+
+
+  <!-- <datalist> this tag is used for its same as select tag -->
+<br>
+<label for="browser-list">browser-list</label><br>
+<input list="browser" name="browser-list" id="browser-list">
+<datalist id="browser">
+<option value="internet explorer">
+<option value="firefox">
+<option value="chrome">
+<option value="safari">
+</datalist>
+<br>
+
+
+
+  <!-- <input type="checkbox"> this tag is used for box checking -->
+<br>
+<label for="box1">remember me
+    <input type="checkbox" name="checksbox" id="box1" >
+</label>
+
+
+  <!-- <input type="button"> this tag is used for button -->
+<br> 
+<input type="button" name="submit" value="login" id="log1">
+</form>
+    </div>
+
+</body>
+</html>

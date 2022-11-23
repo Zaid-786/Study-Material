@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word_Counter</title>
+
+
+<!-- Word Counter CSS statement  -->
+    <style>
+
+        body{                                                   /* body  style*/
+                padding:50px 100px;
+            }
+
+        h1{                                                     /* h1  style */
+                text-decoration: underline;
+                text-align: center;
+          }
+
+        .container{                                             /* main container style */
+
+            border: 2px solid black;
+            text-align: center;
+            padding:30px;
+            background-color:green;
+
+        }
+
+        textarea{                                               /*textarea  style*/
+            width:100%;
+        }
+
+        P{                                                      /* p tag style*/
+            font-size:20px;
+            font-weight:bold;
+            color:white;
+        }    
+
+    </style>
+</head>
+
+
+<!-- Word Counter HTML statement -->
+<body>
+
+    <h1>Word-Counter</h1>
+    <div class="container">
+        <textarea id="textbox" cols="50" rows="10"></textarea>
+
+        <p>
+        <span id="word">0</span> Words and <span id="char">0</span> Characters
+        </p>
+    </div>
+
+
+
+
+<!-- Word Counter javascript statement -->
+<script>
+
+    let textbox = document.getElementById("textbox");                       // textarea selected by id
+
+    textbox.addEventListener("input",function() {                           // add input event on textarea and passed function in we wrote logic 
+
+        var text=this.value;                                                // we stored input value into text variable
+        var char=text.length;                                               // we got length of text variable and stored into variable char
+
+    document.getElementById("char").innerHTML=char;                        //we set char variable value into span char by id and performed our logic
+
+
+    text=text.trim();                                                      // by using trim() method we removes white-space of start-side and end-side
+    let word=text.split(" ");                                              // in this statement we will split means seperate word by using split() method and passed in this method parameter space string and stored into variable word
+
+    let clearNode= word.filter(function(elm){                              // clearNode varaible is stored filter words without white-space 
+
+        return elm!="";
+
+    });
+
+    document.getElementById("word").innerHTML=clearNode.length;            // we set clearNode variable  lenght value into span word by id and performed our logic
+
+    });
+
+</script>
+
+</body>
+</html>

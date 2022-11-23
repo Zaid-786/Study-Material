@@ -1,0 +1,72 @@
+#border1
+{
+    border-style:solid;
+}
+
+#border2
+{
+    border-style:dotted;
+}
+
+#border3
+{
+    border-style:dashed;
+}
+
+#border4
+{
+    border-style:double;
+}
+
+#border5
+{
+    border-style:groove;
+}
+
+#border6
+{
+    border-style:ridge;
+}
+
+#border7
+{
+    border-style:inset;
+}
+
+#border8
+{
+    border-style:outset;
+}
+
+#border9
+{
+    border-style:none;
+}
+
+#border10
+{
+    border-style:hidden;
+}
+
+#border11
+ {               /* top   right   bottom  left*/
+    border-style: dotted  dashed  solid  double;
+}
+
+
+
+#border-all
+{
+    border-style:solid;        /* this is border style property */
+    border-width:5px;          /* this is border width property to used for give thickness of border */
+
+                /* top   right   bottom  left */
+      border-color:red yellow blue black;       /*this is boder color property to give color of border */
+
+    border-radius:20px;         /*this is border radius property to give radius of border */
+
+}
+
+
+
+

@@ -1,0 +1,21 @@
+
+body{
+    background-color: aqua;
+}
+
+
+
+/* we can multiple images in a container with color.. */
+#bgimg {
+    background-color:grey;     /*we gave color in the background of container*/
+    border: 1px solid ;
+                      /* this is image1     , this is image2 */
+    background-image:url(/image/images.jpeg),url(/image/images1.jpeg);
+    background-repeat:no-repeat;
+    background-position:left top,right bottom;
+             /* this is image1  , this is image2 */
+    background-size:500px 1000px , 500px 500px;
+
+
+}
+

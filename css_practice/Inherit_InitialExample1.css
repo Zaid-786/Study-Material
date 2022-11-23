@@ -1,0 +1,24 @@
+/* we created a div and their have three link */
+
+#overview                   /* we gave div color green */
+{
+    color:green;
+}
+
+
+#byuser                     /*  we gave red color of link one */
+{
+ color:red;
+}
+
+
+#initial                     /*  we gave initial color of link second  that means(initial:- The default value for the property (the browser default) */
+{
+color:initial;
+}
+
+
+#inherit                    /*  we gave inherit color of link third  that means  inherit: Get the property from the parent element. */
+{
+color:inherit;
+}

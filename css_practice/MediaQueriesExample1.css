@@ -1,0 +1,40 @@
+/* in css, we have css media queries concept to change style size for media(device like computer,tablet,mobile etc)*/
+
+
+.box{
+    background-color: red;
+    text-align: center;
+}
+
+
+
+/* below statement is shown change of style of box1 */
+@media screen and (max-width: 1000px) {
+    
+    #box1
+    {
+      background-color: green;
+    }
+}
+
+
+/* below statement is shown change of style of box2 */
+@media screen and (max-width: 500px) {
+    
+    #box2
+    {
+      background-color: yellow;
+    }
+}
+
+
+
+/* below statement is shown change of style of box3 */
+@media  (min-width:100px) and (max-width: 300px) {
+    
+    #box3
+    {
+      background-color:black;
+    }
+}
+

@@ -1,0 +1,25 @@
+
+
+a{
+    text-decoration:none;
+}
+
+a:link                              /*    a:link {} - a normal, unvisited link */
+{
+  color:black;
+}
+
+a:visited                               /* a:visited {} - the user has visited */
+{
+color:red;
+}
+
+a:hover                                   /* a:hover{} - a link when the user mouses over it */
+{
+    color: aqua;
+}
+
+a:active                                       /*  a:active {}- a link the moment it is clicked */
+{
+    color:green;
+}

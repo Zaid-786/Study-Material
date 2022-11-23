@@ -1,0 +1,39 @@
+
+/* in css margins have margins collapse concept thats mean when we gave two container(element) margins one is 20px and second container 40px then css took margins of second container beacous its big  */
+
+
+.class1
+{
+    border: solid RED;
+    margin: 30px;                   /* in this statement we gave margins all sides (top,right,bottom,left)*/
+}
+
+.class2
+{
+    border-style:solid;
+    border-color:yellow;
+        /*   top  bottom     */
+    margin: 80px 80px;              /* in this statement we gave margins only top bottom*/
+}
+
+.class3
+{
+    border-style:solid;
+    border-color:green;
+
+    margin-top: 20px;               /* in this statement we gave margins only top */
+    margin-bottom: 40px;            /* in this statement we gave margins only bottom*/
+    margin-right: 60px;             /* in this statement we gave margins only right*/
+    margin-left: 10px;              /* in this statement we gave margins only left*/
+}
+
+
+
+.class4
+{
+    border: solid black;
+    margin-top:-60px;              /* Tip: Negative values are allowed in margins.*/
+ border-radius: 30px;
+
+}
+

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+    .flex-container{
+
+        margin: 50px;
+        padding: 30px;
+        background-color:DodgerBlue;
+        display:flex;
+        /* flex-wrap:wrap-reverse;                  (wrap,nowrap,wrap-reverse)      */
+        /* flex-direction:row-reverse;              (row,row-reverse,column,column-reverse)  */
+        /* flex-flow:row wrap;                      (both flex-wrap and flex-direction) */
+        height: 100vh;
+        flex-wrap: wrap;
+        align-content:space-between;
+
+    }
+
+    .flex-child{
+
+        margin: 20px;
+        padding: 30px;
+        background-color:white;
+
+    }
+
+
+</style>
+</head>
+
+
+
+<body>
+    <div class="flex-container">
+        <div class="flex-child">one   [1]</div>
+        <div class="flex-child">two   [2]</div>
+        <div class="flex-child">three [3]</div>
+        <div class="flex-child">four  [4]</div>
+        <div class="flex-child">five  [5]</div>
+        <div class="flex-child">six   [6]</div>
+        <div class="flex-child">seven [7]</div>
+        <div class="flex-child">eight [8]</div>
+        <div class="flex-child">nine  [9]</div>
+        <div class="flex-child">ten   [10]</div>
+    </div>
+
+
+<script>
+
+// .....................Object Literals example................................................................        
+// let mobile={
+//                 name:"nokia",
+//                 model:"1133",
+//                 color:"white",
+                
+//                 price:function()
+//                           {
+//                             console.log(`price of nokia 1133 is 2000$`);
+//                           }
+// };
+
+
+
+// console.log(mobile);
+
+// console.log(mobile.name);
+// console.log(mobile.model);
+// console.log(mobile.color);
+// mobile.price();
+
+
+
+
+//....................Object Constructor example................................................................
+// we are going to create an object by using object Constructor.
+
+//below example,its a constructor without parameters(means statics data ).
+// function Mobile()               //this is Mobile() Constructor....
+// {
+//     this.name="Apple";
+//     this.model="iphoneX";
+
+//     this.price=function()
+//     {
+//         console.log("mobile price :200k$");
+//     }
+
+// }
+
+// // we created apple object by using Mobile() constructor.
+// const apple= new Mobile();
+// const nokia= new Mobile();
+
+// nokia.color='golden';
+// delete nokia.color;
+// console.log(nokia);
+// console.log(apple.name);
+// console.log(apple.model);
+// apple.price();
+
+
+
+
+//below example,it a constructor with parameters(means dynamically data)
+
+        // function Mobile(name, model,value)               //this is Mobile() Constructor....
+        // {
+        //     this.name=name;
+        //     this.model=model;
+        //     this.value=value;
+
+
+
+        //     this.price=function()
+        //     {
+        //         console.log(`device price : ${this.value}`);
+        //     }
+
+        // }
+
+        // // we created apple object by using Mobile() constructor.
+        // const apple= new Mobile("Apple","iphoneX","200k$");
+        // const nokia= new Mobile("Nokia","1133","100$");
+
+
+
+        // console.log(apple);             //output:- Object { name: "Apple", model: "iphoneX", value: "200k$", price: price() }
+        // console.log(nokia);             //output:- Object { name: "Nokia", model: "1133", value: "100$", price: price() }
+
+
+        // console.log(apple.name);        //output:- Apple
+        // console.log(apple.model);       //output:- iphoneX
+        // apple.price();                  //output:- device price : 200k$
+
+
+        // console.log(nokia.name);        //output:- Nokia
+        // console.log(nokia.model);       //output:- 1133
+        // nokia.price();                  //output:- device price : 100$
+
+
+        // we can created an object by using class but its not preferrable.
+        // class People{
+
+        //     constructor(number)
+        //     {
+        //         this.name="ansari";
+        //         this.number=number;
+        //     }
+        // }
+
+        // let people1 = new People(123);
+
+        // console.log(people1.name); //output:-
+        // console.log(people1.number); //output:-
+
+
+
+
+            let footballer={
+                                players:"ronald"
+            };
+
+
+            let footballer_1= Object.create(footballer);
+
+            console.log(footballer_1.players);
+
+            footballer_1.games="football";
+            console.log(footballer_1.games);
+
+
+
+
+
+</script>
+
+</body>
+</html>

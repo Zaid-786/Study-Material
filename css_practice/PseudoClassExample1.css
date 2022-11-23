@@ -1,0 +1,39 @@
+
+p:nth-child(3)
+{
+    color:green;
+}
+
+
+p:first-child
+{
+    color:red;
+}
+
+
+p:last-child
+{
+    color:aqua;
+}
+
+
+
+
+
+
+li:first-child
+{
+  color: red;
+}
+
+
+li:last-child
+{
+  color:green;
+}
+
+
+li:nth-child(2)
+{
+    color: blue;
+}

@@ -1,0 +1,97 @@
+
+/* element selector */
+h1{
+    color: red;
+}
+
+
+/* id selector */
+#p2
+{
+    color: green;
+}
+
+/* class selector*/
+.div2
+{
+    border: 1px solid black;
+}
+
+
+/* pseudo class selector */
+a:hover{
+    background-color: red;
+}
+
+
+/* pseudo element selector */
+
+#p1::first-line
+{
+    color: rgb(45, 143, 75)
+    /* font-size: 30px; */
+}
+
+#p1::first-letter
+{
+    font-size:50px;
+    color:firebrick;
+}
+
+
+
+/* attribute element selector*/
+a[href="http://www.duckduckgo"]
+{
+  color:blueviolet;
+}
+
+
+/* select all element      and this universal selector used to show all element border and its best used for debbuger time  
+
+*{
+        border:1px solid black;
+} 
+
+*/
+
+
+
+/* adjecent element selector  */  /*adjecent element selector means that child element presented in the parent container */
+div a
+{
+    color:fuchsia;
+}
+
+
+
+/* direct child element selector */
+div>a
+{
+    color:rgb(11, 130, 185);
+}
+
+
+/* sibling element selector
+
+div + a{                    in siblings element selector is used for style of their siblings
+    color:white;
+}
+
+*/
+
+
+/* normal element selector
+div ~ a{                        
+    color:white;
+}
+
+*/
+
+
+
+
+/* multiple elements selector  */
+h1,p{
+    color:rosybrown;
+}

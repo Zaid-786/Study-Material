@@ -1,0 +1,62 @@
+
+
+
+.first
+{
+    border: 1px solid black;
+    background-color: yellowgreen;
+    opacity: 0.1;                     /*  opacity means transparency  and value 0.1 thats mean most-higly transparent  */
+}
+
+.second
+{
+
+    border: 1px solid black;
+    margin-top: 20px;
+    background-color: yellowgreen;
+    opacity: 0.3;                     /*  opacity means transparency  and value 0.3 thats mean high transparent  */
+
+}
+
+.third
+{
+    border: 1px solid black;
+    margin-top: 20px;
+    background-color: yellowgreen;
+    opacity: 0.6;                        /*  opacity means transparency  and value 0.6 thats mean medium transparent  */
+
+}
+
+
+.default
+{
+    margin-top: 20px;
+    border: 1px solid black;
+    background-color: rgb(153, 224, 11);
+                                      /*  opacity means transparency  and value 0.1 thats mean default transparent  */
+    opacity:1;             /* opacity is default by browser */
+
+    margin-bottom: 20px;
+}
+
+
+
+.demo1
+{
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+}
+
+ .demo1>img{    
+    
+    width:100%;      /* we gave width 100% but it took lenght according thier parent container width size (.demo1) */
+    height:100%;    /* we gave height 100% but it took lenght according thier parent container height (.demo1) */
+}
+
+
+
+/* we used opacity in the img by hover  */
+.demo1>img:hover{
+    opacity:0.5;
+}

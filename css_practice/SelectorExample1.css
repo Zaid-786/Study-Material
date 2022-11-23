@@ -1,0 +1,34 @@
+
+
+/* h1 is element-selector */
+h1{
+    color:blue;
+    
+}
+
+/* p is element-selector */
+p{
+    color:red;
+    font-size:20px;;
+}
+
+
+
+/* <h2 id="text-green"> this is id-selector  */
+#text-green
+{
+    color:green;
+}
+/* <h3 id="text-red"> this is id-selector  */
+#text-red
+{
+    color:red;
+}
+
+
+
+/* <p class="text-blue"> this is class-selector  */
+.text-blue
+{
+    color:blue;
+}

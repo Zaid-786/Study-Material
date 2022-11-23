@@ -1,0 +1,34 @@
+/* in the below examples we used box-shadow properties and their different types of values like(horizontal x-axis, vertical y-axis , blur value, spread value, color value etc) */
+
+#BSE1
+{
+ border: 1px solid black;
+ width: 500px;
+
+margin: 100px;
+
+ background-color:yellowgreen;
+
+       /*  (horizontal-x,vertical-y,blur,spread,  color,) */
+       box-shadow:5px       5px     5px    5px   black; 
+
+}
+
+
+
+
+#BSE2
+{
+ border: 1px solid black;
+ width: 600px;
+ height: 100px;
+
+margin: 100px;
+
+ background-color:grey;
+
+       /*  (horizontal-x,vertical-y,blur,spread,  color,)      we can used multiple shadow in a container */
+       box-shadow:5px  5px  5px 5px blue, 10px 10px 5px 8px red,15px 15px 5px 8px green ;
+
+}
+

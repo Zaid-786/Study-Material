@@ -1,0 +1,38 @@
+projects showcase is important questions
+
+# important point of javascript for interview
+
+
+* Equality concept
+					"32"==32       output:- true
+					"32"===32      output:- false
+
+
+* Async JS concept
+* Error handling concept
+* ES6 concepts
+* Array methods
+
+
+* var vs let vs const
+
+* Hoisting
+
+* implicit and explicit binding
+
+* call & apply & bind 
+	  https://www.youtube.com/watch?v=75W8UPQ5l7k
+
+* implement Caching / Memoize Function
+
+* map() and forEach()  and  filter()
+
+* Null and Undefined
+
+* event delegation
+
+* flatten the array 
+
+
+
+

@@ -1,0 +1,53 @@
+
+
+
+#container
+{
+    border: 1px solid black;
+    margin: 150px;
+    width: 100px;
+    padding: 70px;
+    background-color: red;
+
+    transition-property:all;            /* in css,transition properties are used for allows you to change property values smoothly, over a given duration. */
+    transition-duration:1s;             /* in this property we gave the duration of the transition */
+
+    transition-delay:500ms;             /* in this property we gave the delay of element transition  */
+
+    /* transition-timing-function: ease-in;     in this property we gave the timing function of element transition to moving without used of transition-delay  property */
+
+
+}
+
+
+
+#container:hover{                       /* in this hover statement we gave widht and bgcolor properties and values to transition */
+
+width: 200px;
+background-color: green;
+
+}
+
+
+
+
+#box{
+    margin: 150px;
+    border: 1px solid black;
+    padding: 50px;
+    width: 70px;
+    height: 70px;
+    background-color:yellowgreen;
+
+    transition:width 3s,height 4s;     /* in this property we used transition all values and dont used this property until you become expert of css */
+
+}
+
+
+#box:hover{
+
+    width: 300px;
+    height: 100px;
+
+}
+

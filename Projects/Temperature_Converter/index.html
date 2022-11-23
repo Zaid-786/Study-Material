@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+</head>
+
+
+
+
+<!-- /* Temperature-Converter CSS statements */ -->
+<style>
+
+        body{                                                        /* body style of temperature-converter */
+
+            padding: 50px 100px ;
+        }
+
+        h1{                                                          /* h1 style of temperature-converter */
+            text-align: center;
+        }
+
+        .container{                                                  /* container style  of temperature-convert */
+            text-align: center;
+            padding: 50px;
+            background-color:cyan;
+            border-radius:15px;
+            border: 2px solid black;
+        }
+
+        .input_div{                                                 /* input_div style  of temperature-converter*/
+
+            display: inline-block;
+
+        }
+
+        .inpt{                                                      /* inpt field style of temperature-converter */
+                padding: 5px 10px;
+                margin: 10px;
+                font-weight: bold;
+                font-size:20px;
+        }
+
+        label{                                                      /* label style of temperature-converter */
+            font-size: 22px;
+        }
+
+    </style>
+
+
+<body>
+
+<!-- //Temperature-Converter html statements    -->
+<h1>Temperature Converter</h1>
+<div class="container">
+  
+    <div class="input_div">
+        <label>Celsius</label><br>
+        <input type="number" value="0" id="cel"  class="inpt">
+    </div>
+  
+  <div class="input_div">
+      <label>Fahrenheit</label><br>
+    <input type="number" value="32" id="fah" class="inpt">
+    </div>
+
+</div>
+
+
+
+
+
+<!-- Temperature-Converter javascript statements -->
+<script type="text/javascript">
+
+        let cel=document.getElementById("cel");
+        let fah=document.getElementById("fah");
+
+        cel.addEventListener("input",function(){                // we applied input event on input type and passed function for logic that how celsius convert to Fahrenheit.
+
+            let c=this.value;                                // first we got value which type into input field  and stored in variable c         
+            let f=(c * 9/5) + 32;                            // we applied celsius to fahrenheit convert formula and stored in variable f
+            
+            if(!Number.isInteger(f))                         // in this statement me put a condition that after got converted value is NOTinteger to only show 4 digits after point          
+            {
+                f=f.toFixed(4);   
+            }
+            fah.value=f;                                     // celsius convert value assigned to fahrenheit value
+
+
+        });
+
+
+        fah.addEventListener("input",function(){                  // we applied input event on input type and passed function for logic that how Fahrenheit convert to Celsius.
+
+            let f=this.value;                                // first we got value which type into input field  and stored in variable f
+            let c= (f - 32) * 5/9 ;                          // we applied fahrenheit to celsius convert formula and stored in variable c
+            
+            if(!Number.isInteger(c))                         // in this statement me put a condition that after got converted value is NOTinteger to only show 4 digits after point 
+            {
+                c=c.toFixed(4);
+            }
+            
+            cel.value=c;                                     // fahrenheit convert value assigned to celsius value  
+
+        });
+
+
+</script>
+
+
+
+
+</body>
+</html>

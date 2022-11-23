@@ -1,0 +1,33 @@
+
+
+
+
+/* in this scope we displayed color in paragraph by id= #background */
+/* #background
+{
+    background-color: yellow;
+    
+} */
+
+
+
+/* in this scope we displayed image in paragraph by id= #background  and modified according their requirement*/
+#background
+{
+
+    background-image: url("/image/twitter.jpeg");
+    background-repeat:no-repeat;
+    /* background-position:right bottom; */
+    background-size:100% 100%; 
+}
+
+
+
+/* in this scope we displayed image in the body by html element*/
+body
+{
+    background-image: url("/image/nature.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+
+}

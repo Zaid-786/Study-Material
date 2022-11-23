@@ -1,0 +1,56 @@
+
+/* this is example of pseudo element....... */
+
+
+/*  ::after              pseudo-element can be used to insert some content after the content of an element. */
+h1::after{
+    content:" website"
+}
+
+
+
+/*   ::before             pseudo-element can be used to insert some content before the content of an element. */
+h1::before{
+    content:url(/image/Background.png);
+}
+
+
+
+
+
+
+/*  ::first-letter       pseudo-element is used to add a special style to the first letter of a text. */
+p::first-letter{
+    color:yellow;
+    font-size:60px;
+}
+
+
+
+
+
+/*  ::first-line         pseudo-element is used to add a special style to the first line of a text. */
+p::first-line{
+    color:blue;
+    font-size:30px;
+    font-weight:900;
+}
+
+
+
+
+  /* ::selection          pseudo-element matches the portion of an element that is selected by a user. */
+::selection
+{
+    color:white;
+    background-color:blue;
+}
+
+
+
+
+
+
+
+
+

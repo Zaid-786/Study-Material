@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky-Manu</title>
+
+
+<style>
+    body{                                                       /* body style*/
+        margin: 0 auto;
+        }
+        
+        #header{                                                /* header style id */
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        #logo{                                                  /* logo of header style */
+            width: 250px;
+            border-radius: 50%;
+        }
+        
+        
+        #nav-bar{                                               /* navbar style id */
+            
+            text-align: center;
+            background-color: cadetblue;
+            width: 100%;  
+            
+        }
+        
+        #nav-bar li{                                            /* li of navbar style */
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .container{                                             /* main container style */
+            text-align: center;
+            padding: 50px 100px;
+        }
+        
+        #about-img{                                             /* main container style of the about img */
+                width: 100%;
+    }
+
+
+    p{                                                          /* p tag style */
+        text-align: justify;
+    }
+
+
+    .sticky{                                                    /* we created sticky-menu and applied it on navbar by written script logic  */
+                position: fixed;
+                top: 0;
+                width: 100%;
+    }
+
+</style>
+</head>
+
+
+<body>
+
+<!-- we took logo image container with id -->
+    <div id="header"> 
+    <img src="/images/images3.jpeg" alt="logo image" id="logo">
+    </div>
+
+<!-- we took navbar -->
+    <nav id="nav-bar" >
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Our Team</li>
+        <li>Contact Us</li>
+    </nav>
+
+<!-- we took main container and in this container included image and paragraph -->
+    <div class="container">
+        <img src="/images/About_US (copy).jpg" alt="about us image" id="about-img">
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nemo reiciendis, expedita autem hic consectetur odio ut dolorem unde a maiores. Illum ratione vitae temporibus incidunt, suscipit voluptatibus et. Neque sapiente harum enim accusamus tempore similique ducimus voluptatibus. Exercitationem voluptatum amet odio distinctio enim, deleniti ex saepe eaque et repellat officia repudiandae sit aliquam ducimus assumenda laudantium itaque laborum inventore? Explicabo eum voluptatibus veniam autem sequi dolorum facere laboriosam illo assumenda molestias accusamus earum, ut reprehenderit! Veniam laborum, sapiente perspiciatis nisi natus ipsa libero, possimus quam dolor quaerat exercitationem beatae illo et ducimus molestias magnam architecto tenetur maxime fugiat? Excepturi doloribus praesentium voluptatem adipisci voluptatum neque fugit ut voluptatibus perspiciatis. Asperiores, incidunt nemo. Itaque a magni excepturi! Fugiat, earum repudiandae? Iste magnam dicta, necessitatibus fuga ipsum magni. Asperiores error nemo quis delectus blanditiis rerum facere debitis sequi tenetur, quaerat beatae, impedit, quae sunt itaque aperiam sint nesciunt odit reiciendis cupiditate. Sed inventore, recusandae, sunt animi cum voluptatum eum sequi amet delectus vel rerum aut, enim fugit est voluptates veritatis nemo reprehenderit corporis consectetur! Dicta a temporibus nam necessitatibus. Laudantium maxime incidunt minima quia et fuga? Quae quibusdam quo magnam aperiam pariatur, nisi architecto veniam, praesentium doloremque maxime deleniti tempore necessitatibus distinctio dolore, consequuntur non nihil reprehenderit dolorum assumenda! Quos culpa aliquid laborum dignissimos, vero placeat minus dolores aut cupiditate deleniti officia nobis architecto ipsa et tempora suscipit veniam unde corrupti maiores ipsam tenetur amet maxime? Ab in, quibusdam dolore delectus, nemo sunt perferendis similique vero provident ad, quis accusamus ipsam. Excepturi laboriosam vero recusandae. Ipsa suscipit rerum numquam quas? Fugiat ipsum recusandae atque aspernatur dolores voluptatibus repudiandae soluta necessitatibus non suscipit voluptas modi debitis quis possimus doloremque tempora, in animi maiores, officia minus aperiam voluptatem quos numquam. Facilis fugit consectetur nesciunt placeat soluta voluptas inventore! Distinctio esse nulla cum quisquam quod veritatis? Ratione, vero ullam rem laborum laudantium ipsa accusantium, corrupti eius libero veritatis voluptatem, alias consequatur assumenda omnis. Consequuntur, delectus, architecto accusantium voluptates debitis blanditiis quae adipisci, aliquid nobis modi inventore alias iure! Deserunt, placeat! In asperiores nostrum laboriosam sunt! Quibusdam, quaerat! At facilis possimus odio nulla fuga molestias sit voluptates animi necessitatibus. Rem incidunt quo dolores beatae, fugit quasi? Reiciendis, aspernatur sed, nulla soluta vitae aliquid numquam autem, neque aliquam praesentium recusandae obcaecati culpa animi maxime sint eos! Ratione repellendus est consequuntur quo cum saepe vitae error? Eveniet nihil expedita repellendus, est doloribus eum ullam. Veritatis nisi alias porro fuga, dolorum repudiandae voluptates culpa earum praesentium perspiciatis voluptatibus autem vero ducimus necessitatibus. Quisquam, blanditiis error voluptatem ullam delectus ad. Corrupti, veniam vel optio accusantium, explicabo sapiente tempora quisquam vitae tenetur repudiandae vero consequuntur ab esse ullam consectetur inventore quia. Fugiat unde tempora ex sunt consequatur fugit vero ducimus sit velit pariatur iusto provident, harum inventore sint qui asperiores quis id voluptatibus totam animi natus aut omnis tenetur? Numquam illo quidem eveniet ea quaerat eos pariatur voluptate quam asperiores. Error magni aperiam soluta voluptatibus, quisquam nobis deserunt fugiat quo aliquam hic architecto at maxime incidunt sed! Incidunt, eum ratione?</p>
+    </div>
+
+
+<script>
+
+    // in this script we write logic of sticky-manu
+
+    let navbar=document.getElementById("nav-bar");              //navbar selected by id
+
+    window.addEventListener("scroll",function(){                // we add scroll event on window screen 
+
+            if(window.pageYOffset>=162)                         // we set pageYOffset means that set vertically scroll according particular fixed point 
+            {
+                navbar.classList.add("sticky");                 // if condition is satisfied then set sticky class in navbar
+            }
+            else{
+                navbar.classList.remove("sticky");              // if condition is not satisfied then remove sticky class in navbar
+            }
+    }); 
+
+</script>
+
+</body>
+</html>

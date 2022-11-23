@@ -1,0 +1,19 @@
+
+#PE1
+{
+    border-style:solid ;            /* in this statement we gave container type e.g solid */
+    border-width: 5px;              /* in this statement we gave container widht means thickness */
+
+    
+    padding-top: 20px;             /* in this  statement we gave padding top    20px inside block*/
+    padding-right: 40px;           /* in this  statement we gave padding right  40px inside block*/
+    padding-bottom: 60px;          /* in this  statement we gave padding bottom 60px inside block*/
+    padding-left: 80px;            /* in this  statement we gave padding left   80px inside block*/
+}
+
+
+#PE2
+{
+    border: 2px solid blue ;            /* in this statement we gave container thiickness,style-tye,color all together  e.g solid */
+    padding: 10px 20px 40px 60px;        /* in this  statement we gave padding all dimension together (top:right:bottom:left) padding: 10px 20px 40px 60px; inside block*/
+}

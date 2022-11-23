@@ -1,0 +1,32 @@
+/* below div example to fixed particular container size and resize responsive according */
+
+#n1
+{
+    border:1px solid black;
+    width:calc(100% - 200px);         /*in css, we used calc() function to Allows you to perform calculations to determine CSS property values*/
+    height: 200px;                     
+    background-color:greenyellow;
+}
+
+
+
+/* in css, we have some function and its useful function we must know */
+/* var()   	Inserts the value of a custom propertymmmmmm */
+/* First, declare a global variable named "--main-bg-color", then use the var() function to insert the value of the variable later in the style sheet: */
+:root{
+    --bgcolor:green;              
+    --text-align:justify;
+}
+
+
+
+#n2
+{
+    margin-top:50px;
+    border:1px solid black;
+    text-align:var(--text-align);       /*we use in this line variable which we declared into root selector and its we good practice when you are working multiple css file*/
+    background-color:var(--bgcolor);
+    color: white;
+    
+}
+

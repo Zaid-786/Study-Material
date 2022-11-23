@@ -1,0 +1,60 @@
+
+#parent
+{
+    border:1px solid black;
+    /* width: 10cm;     centimeter lenghth */
+    /* width: 100mm;    milimeter lenghth */
+    /* width:5in;       inch  lenghth */
+    /* width: 600px;    (important) px  lenghth*/
+    /* width:100pt;      pt lenghth */
+    /* width:50pc;       pc   lenghth */
+
+
+    height:50vh;       /* (viewport height and viewport weight are very import when you are creating responsive website )*/
+    width:50vw;
+
+
+}
+
+
+#child
+{
+    border:1px solid red;
+    /* width: 50%;                 when you give child contair lenght in percentage form(%) then its occupied lenght according their parent container size e.g(#child give 50% lenght but it takes lenght of 50% of their #parent container ) */
+
+} 
+
+
+
+
+
+
+
+html{
+    font-size: 10px;
+}
+
+
+ #parent2
+ {
+     border:1px solid black;
+     margin-top:60px;
+
+     font-size:30px;
+
+
+ }
+
+
+
+ #child2
+ {
+   border:1px solid black;
+  width: 500px;
+
+  font-size:2em;            /* when you give child container lenght in the form(em) then its occupied lenght according 2 times multiply of their parent container size e.g(#child2 give 2em lenght but it takes lenght of 2 times multiply of their #parent2 container size)  */
+
+    /* font-size:2rem;    when you give child contair lenght in the form(rem) then its occupied lenght according root element(html tag) multiply of root element size e.g(#child2 give 2rem lenght but it takes lenght of 2 times multiply of their root element(html tag)container size) */
+
+
+ }

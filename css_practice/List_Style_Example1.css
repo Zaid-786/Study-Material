@@ -1,0 +1,53 @@
+
+/* unorderlist example  */
+
+#a
+{
+    list-style-type:disc;
+}
+
+#b
+{
+    list-style-type:circle;
+}
+
+
+#c
+{
+  list-style-type:square;
+}
+
+#d
+{
+    list-style-type:none;
+}
+
+
+
+/* orderlist example */
+
+#x
+{
+    /* list-style-type:lower-alpha;         lower-alpha means we give lower case alphabate type*/ 
+    list-style-type:upper-alpha;         /*   upper-alpha means we give upper case alphabate type */ 
+
+}
+
+
+#y li
+{
+    /* list-style-type:lower-roman;              lower-roman means we give lower roman words type  */
+    list-style-type:upper-roman;
+    border: 1px solid black;            /*   upper-roman means we give upper roman words type */
+    list-style-position:inside;
+}
+
+#z li
+{
+    list-style-image:url("/image/Background.png");       /* The list-style-image property specifies an image as the list item marker:*/
+
+    border:1px solid black;
+    list-style-position:inside;
+
+}
+

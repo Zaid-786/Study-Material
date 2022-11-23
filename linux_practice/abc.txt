@@ -1,0 +1,7 @@
+windows 8
+windows 10
+windows 11
+linux 
+kali_linux
+backtrack_os
+mac_os

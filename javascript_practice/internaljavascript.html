@@ -1,0 +1,804 @@
+
+<!-- in this file we will write javascript program in internal way -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body{
+            background-color:cyan;
+        }
+    </style>
+
+
+    
+</head>
+<body>
+
+    <h1>internal javascript</h1>
+    <!-- <h1 id="demo">example of the document.getElementById  method  </h1> -->
+    
+    
+    
+    <script type="text/javascript">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // (this is example of window.screen object)
+        // // Returns the height of the screen (excluding the Windows Taskbar)
+        //     console.log("only screen height of device excluding taskbar : "+screen.availHeight);            // output:- only screen height of device excluding taskbar : 729
+
+        // //Returns the width of the screen (excluding the Windows Taskbar)
+        //     console.log("only screen width of device excluding taskbar : "+screen.availWidth);              // output:- only screen width of device excluding taskbar : 1440
+
+        // //Returns the total height of the screen
+        //     console.log("total screen height of device : "+screen.height);                                  // output:- total screen height of device : 810
+
+        // //Returns the total width of the screen
+        //     console.log("total screen width of device : "+screen.width);                                    // output:- total screen width of device : 1440
+
+        // //Returns the screen orientation means(Landscape,Potrait)
+        //     console.log("returns the screen orientation"+screen.orientation);                               // output:- returns the screen orientation[object ScreenOrientation]
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // //this is example of navigator object and navigator object is the sub-object of window object and navigator object has many properties e.g()
+        // console.log("appCodeName of browser : "+navigator.appCodeName);             // output:- appCodeName of browser : Mozilla
+        // console.log("appName of browser : "+navigator.appName);                     // output:- appName of browser : Netscape
+        // console.log("appVersion of browser : "+navigator.appVersion);               // output:- appVersion of browser : 5.0 (X11)
+      
+        let cookies=navigator.cookieEnabled;                                           // frist declared a variable and assigned navigator.cookieEnabled with in it then you get true or false otherwise undefined
+        console.log("cookieEnable of browser : "+ cookies);                            // output:- cookieEnable of browser : true
+        
+        
+        // console.log("geolocation of browser : "+ navigator.geolocation);            // output:- geolocation of browser : [object Geolocation]
+        // console.log("language of browser : "+ navigator.language);                  // output:- language of browser : en-US
+        // console.log("onLine of browser : "+ navigator.onLine);                      // output:- onLine of browser : true
+        // console.log("platform of browser :"+ navigator.platform);                   // output:- platform of browser : Linux x86_64
+        // console.log("product of browser :"+ navigator.product);                     // output:- product of browser : Gecko
+        // console.log("userAgent of browser :"+ navigator.userAgent);                 // output:- userAgent of browser :Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+
+
+
+
+
+
+
+
+
+
+
+    
+    // this is example of redirected 
+    // <button id="btn">redirected</button>
+                    
+    //                 //OR
+
+    //    let btn=document.getElementById("btn");
+
+    //    btn.addEventListener("click",function(){
+
+    //     // redirected first way
+    //     // location.href="https://www.google.com";
+
+    //     // redirected two way
+    //     // location.assign("https://www.google.com");
+
+    //     //below statement used for reload our page
+    //     //location.reload();
+
+
+    //    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//this is example of setInterval() method and clearInterval() method
+    // <button id="btn">clear interval</button>
+
+    //             //OR        
+
+    //     var t1=setInterval(fun,2000);      
+    //     function fun()
+    //     {
+    //         console.log("please subscribe......");
+    //     }
+        
+        
+    //     let btn = document.getElementById("btn");
+    //     btn.addEventListener("click",function()
+    //     {
+    //         clearInterval(t1);
+    //         console.log("setInterval is cleared...");
+    //     })
+        
+        
+        
+        
+        //this is example of setInterval() method        
+        // <p id="demo"></p>
+        
+        // setInterval(myTimer,1000);
+
+            // function myTimer()
+            // {
+            //     const d= new Date();
+            //     document.getElementById("demo").innerHTML=d.toLocaleTimeString();
+            // }
+
+
+
+
+        // this is setTimeout() method example
+        // setTimeout(greet,5000);
+
+        // function greet() {
+        //     alert("setTimeout example......");
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
+    //     // this is html statement
+    //     <button id="btn1">google</button>
+    //     <button id="btn2">Close</button>    
+        
+    //             //OR
+
+    //     // this is javascript statement
+    // let btn1=document.getElementById("btn1");
+    // let btn2=document.getElementById("btn2");
+
+    // let url="http://www.google.com";
+    // let feature="height=300px ,width=300px";
+
+    // let win;        //we declared win variable because of we will stored btn1 pop-up new window statement within it . 
+        
+    // btn1.addEventListener("click",function()
+    // {
+    //      win=window.open(url,"google",feature);             // we applied new window pop-up by using this statement
+    // });
+
+
+    // btn2.addEventListener("click",function(){
+
+    //     win.close();                // by using win variable to close()  new popup window 
+    // });
+
+
+
+
+
+
+
+
+
+
+
+
+        // this is example of windows properties(innerHeight,innerWidth,outerHeight,outerWidth)
+        // // innerHeight property
+        // console.log("innnerHeight of browser window :"+window.innerHeight);
+        // // innerWidth property
+        // console.log("innerWidth of browser window :"+window.innerWidth);
+
+        // //outerheight
+        // console.log("outerHeight of browser window :"+window.outerHeight);
+        // //outerWidht property
+        // console.log("outerWidth of browser window :"+window.outerWidth);
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            // this is example of preventDefault() method
+        //this is html statement
+        // <form action="" id="myform">
+        //     <input type="text">
+        //     <input type="submit" value="submit">
+        // </form>
+
+                            //OR
+
+            // this is javascript statement
+        // let form= document.getElementById("myform");
+
+        // form.addEventListener("submit",function(event)
+        // {
+        //     console.log("submit event is not work because of preventDefault() method");
+        //     event.preventDefault();
+        // });
+
+
+
+
+
+
+
+
+
+            // this is example of preventDefault() method
+        // <a href="http://www.google.com" id="anchor" alt="Google server-down">Click me on Google</a>
+        //                 //OR 
+        // let link=document.getElementById("anchor");
+
+        // link.addEventListener("click",function(event)
+        // {
+        //     console.log("click event is activaed and prevent action");
+        //     event.preventDefault();
+        // }
+        // );
+
+
+
+
+
+
+
+
+
+
+        // this is  example of event capturing..........................
+        // <div id="demo">
+        //     <button id="btn">send me</button>
+        // </div> 
+        
+                        // OR
+
+        // let div1=document.getElementById("demo");
+        // let btn=document.getElementById("btn");
+        
+                // event capturing example..................... (parent-event to child-event)
+        // according to the event-capturing  below event invoked  flow parent-event to child-event
+        // first parent-event called button element event when you clicked it. after all child-event invoked it.
+
+            // you should passed three parameters in addEvenListeners for event-capturing and if you passed true the event-capturing performed and false is event-bubbling 
+            // btn.addEventListener("click",btnClick,true);
+            // div1.addEventListener("click",div1Click,true);
+            // document.body.addEventListener("click",bodyClick,true);
+
+            // function btnClick()
+            // {
+            //     console.log("click event is activated on button element");
+            // }
+
+            // function div1Click()
+            // {
+            //     console.log("click event is activated on div container");
+            // }
+
+            // function bodyClick()
+            // {
+            //     console.log("click event is activated on body container");
+            // }
+
+
+
+
+
+
+
+
+//this is example of form-event 
+
+        // <input type="text" id="demo">    
+
+                    // OR
+
+        // let x=document.getElementById("demo");
+
+    //form focus event example
+    // x.addEventListener("focus",myFocusFuncttion);
+    // // form blur event example
+    // x.addEventListener("blur",myBlurFuncttion);
+    // //form chnage event example
+    // x.addEventListener("change",changeFunction);        
+    
+    //     // this is focus event function when you clicked on input element then this function triggered
+    // function myFocusFuncttion()
+    // {
+    //     x.style.background="cyan";              //change the input background color
+    //     console.log("focus event is activated...");
+    // }
+
+    
+    // function myBlurFuncttion()
+    // {
+    //     x.style.background="white";
+    //     console.log("blur event is Activated...");
+    // }
+
+
+    // function changeFunction()
+    // {
+    //     console.log(this.value);
+    // }
+
+
+
+
+
+
+
+
+
+
+        // <style>
+        //     body{                            // we gave body height 2000px because of you want body scroll
+        //         height:20000px;
+        //     }
+        // </style>
+
+        //                 // OR
+
+        // window.addEventListener("scroll", function()
+        // {
+        //     // console.log("scrolling......");
+
+        //     if(window.pageYOffset > 150)                 // pageYOffset property means that we gave condition and when condition is statisfied window background color change
+        //     {
+        //         document.body.style.background="red";
+        //     }
+        // });
+
+
+
+
+
+        
+        // this is example keydown event                                 when you applied keydown events on window and you user pressed any keyboard button then keydown event is stored console window     
+        // window.addEventListener("keydown", checkedKey);
+        
+        // function checkedKey(event)
+        //    {
+        //           console.log((event.key));
+        //    }
+            
+
+
+
+
+
+
+
+        
+        
+        // this is css statement
+        // <style>
+        //     #box{
+        //         background-color:red;
+        //         width: 200px;
+        //         height: 100px;
+        //         text-align:center;
+        //     }
+        // </style>
+    
+                    // OR 
+     
+     //this is html statement
+    //  <div id="box" >mouse event list</div>
+                
+                       //  OR 
+                    
+    // let box=document.getElementById("box");
+    
+    // click event example                      when you clicked on element then action do
+    // box.addEventListener("click",function()
+    // {
+        //     console.log("mouse click event is actived...");
+        // });
+        
+        
+        // contextmenu event example                    when you clicked right on element then action do
+        // box.addEventListener("contextmenu",function()
+        // {
+        //     console.log("mouse contextmenu event is activated by clicking right ")
+        // });
+
+
+        //dblclick event example                        when you double clicked on the element then action do
+        // box.addEventListener("dblclick",function(){
+        //     console.log("mouse click is activated");
+        // });
+
+        
+        //mouseover event example                       when you moved over the element then action do
+        // box.addEventListener("mouseover",function(){
+        //     console.log("mouseover event is activated");
+        // });
+
+        //mouseout event example                        when you moved out the element then action do
+        // box.addEventListener("mouseout",function(){
+        //     console.log("mouseout event is activated");
+        // })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // <img id="demo" width="500px" src="https://www.wallpaperup.com/uploads/wallpapers/2017/04/22/1086857/48df69b50d7601215c6509cb7bd6ab69-700.jpg">
+        
+        //                     // OR
+
+        // window.addEventListener("DOMContentLoaded", function()
+        // {
+        //     console.log("DOMContentLoad is activated...");
+        // });
+
+
+        // window.addEventListener("load", function(){
+
+        //     console.log("windows is fully loaded....");
+        // });
+
+
+
+
+
+
+
+
+        // <button id="btn">send me</button>
+
+                        // OR
+
+        // let btn=document.getElementById("btn");
+
+        // function click1()
+        // {
+        //    console.log("click1 is activated");
+        // }
+
+        // function click2()
+        // {
+        //     console.log("click2 is activated");
+        // }
+
+
+        // btn.addEventListener("click",click1);       //function click1() is calling by click event
+        // btn.addEventListener("click",click2);       //function click2() is calling by click event at same time
+
+
+        // //lets use removeEventListener("event-name",function-name)
+        // btn.removeEventListener("click",click1);         // by using removeEventListener() we can remove particular event in the elemnt and in this button element we removed click1() and event
+
+
+
+
+
+
+
+
+
+
+
+    // //this  is example of multiple events        
+    //     <button id="btn" class="demo" > send me </button>
+        
+    //                     OR
+
+    //     let btn= document.getElementById("btn");
+
+    //     // click event example
+    //     btn.addEventListener("click", function()
+    //     {
+    //         console.log("button was click");
+    //     });
+
+    //     // mouseover event example
+    //     btn.addEventListener("mouseover", function()
+    //     {
+    //         console.log("btn was mouseover");
+    //     });
+
+    //     //mouseout event example
+    //     btn.addEventListener("mouseout", function()
+    //     {
+    //         console.log("btn was mouse out");
+    //     });
+
+
+
+
+
+
+
+        // <button id="btn">send me</button>
+        //                 //OR
+        // // this is example of HTML DOM change attribute like(setAttribute(),getAttribute(),hasAttribute(),removeAttribute()) Method
+        
+        // let btn=document.getElementById("btn");
+
+        // // by setAttribute() method we can set any attributes into html element and when we are going to set any attribute then we passed two parameters , first one is attribute-name and second one is attribute-value (e.g   setAttribute("class","demo"))
+        // btn.setAttribute("class","demo");
+
+        // // by getAttribute() method we can get any attribute value ,supposed below statement we want button class value then output is :- demo
+        // // and if you gave wrong name of attribute then output is:- null
+        // let getValue=btn.getAttribute("class");     // we passed only attribute-name
+        // console.log(getValue);
+
+        // //The hasAttribute() method returns true if the specified attribute exists, otherwise it returns false.
+        // let checked=btn.hasAttribute("class");      // we passed  attribute-name is class if class is presented then output is true otherwise output is false
+        // console.log(checked);                           
+        
+        
+        // btn.setAttribute("name","btnform");         // first set attribute
+        // let remove=btn.removeAttribute("name");     // remove attribute
+        
+        // let checked1=btn.hasAttribute("name");      // checked attribute-name
+        // console.log(checked1);                       // if condition is satisfied then output is true otherwise output is false
+
+
+
+
+
+
+
+
+         
+        // <ul id="solo">
+        //      <li>tea</li>
+        //      <li>coffe</li>
+        //      <li>food</li>
+        //      <li>money</li>
+        // </ul> 
+
+        
+                    //OR
+                    
+    // let elm=document.getElementById("solo");  
+    // let x=document.createElement("li");         // Create a <li> node
+    // x.textContent="wokeup";                      // Create a text node
+
+    // document.getElementById("solo").appendChild(x);             // Append <li> to <ul> with id="solo"
+    // console.log(elm);
+
+
+
+
+
+
+        // <h1 class="intro">headings</h1>
+        // <p>paragraph</p>
+        // <p class="intro">paragraph</p>
+        // <div id="example">
+        //     <h1>headings</h1>    
+        //     <p class="intro">paragraph</p>
+        //     <h1>headings</h1>
+        // </div>
+                        //OR
+
+        // The querySelector() method returns the first element that matches a CSS selector.
+        // let elm=document.querySelector("p.intro");
+        // elm.innerHTML="HELLO world";        // only change into first element of the class
+                        // OR
+        // To return all matches (not only the first), use the querySelectorAll() instead.
+        // if you want to select particilar class all element then you should use the querySelectorAll()
+       
+                         // OR
+        // let elm=document.querySelectorAll("p.intro");
+        // for (let i=0; i<elm.length; i++)
+        // {
+        //     elm[i].innerHTML="hello....world";
+        // }
+
+
+
+
+
+        
+
+
+        
+       // this is example of the document.getElementbyTagName method
+        // <h2>headings</h2>
+        // <p>paragraph</p>
+        // <h2>headings</h2>
+        // <p>paragraph</p>
+        // <h2>headings</h2>
+        // <p>paragraph</p>
+        
+                        // OR
+
+        // this is example of the document.getElementByTageName method
+
+        // let elm3=document.getElementsByTagName("h2");
+
+        // for(let i=0;i<elm3.length;i++)
+        // {
+
+        //     elm3[i].innerHTML ="hello world!";
+        // }
+
+        
+
+
+
+
+        // this is example of the document.getElementByclasName  method
+        // <ul>
+        //     <li class="demo1">list of one</li>
+        //     <li>list of two</li>
+        //     <li class="demo1">list of three</li>
+        //     <li class="demo1">list of four</li>
+        // </ul>
+                                // OR
+
+        //     // below statement is example of getElementsByClassName method
+            // let a=document.getElementsByClassName("demo1");
+
+            // console.log(a);
+            // for(let i=0; i<a.length;i++)
+            // {
+            //     console.log(a[i].innerHTML);                 output:- // list of one 
+            // }                                                         // list of two
+                                                                         // list of three
+                                                                         // list of four
+
+
+
+
+            // <h1 id="demo">example of document.getElementById method</h1>
+                                    // OR
+            // this is example of the document.getElementById method
+            // let elm= document.getElementById("demo");
+            // console.log(elm);
+            // console.log(elm.innerHTML);
+            // elm.innerHTML = "<p>hello.....world</p>";
+            // elm.style.color = "red";
+            // console.log(elm.innerHTML);
+
+
+
+
+            // console.log("hello world!");         output will be in console
+            // alert("hello world!");               output will be pop-up a box on webpage
+            // document.write("hello world!");         /*output will be on a webpage and overwrite all html content*/
+    
+
+            // this is single array example
+    // let books=["math","physics","chemistry", "english","hindi"];
+
+    //     document.write(books);
+
+    //     document.write("<br />")
+    // let x=books.indexOf("math");
+    //     document.write(x);
+    
+
+    // this is a function example
+    // function display(name)
+    //     {
+    //         document.write(name+"<br>");
+    //         document.write("hello world...");
+    //     }
+
+
+    // let name=prompt("enter the name");
+    // display(name);
+
+
+
+    // function add(a,b)
+    //     {
+    //     let z=a+b;   
+    //     return z;
+        
+    //     }
+
+    //     let number1=parseInt(prompt("enter first number"));
+    //     let number2=parseInt(prompt("enter second number"));
+
+    //     let x=add(number1,number2);
+    //     document.write(x);
+
+    
+            //this is anonymous function example
+            // setTimeout(
+            //     function()
+            //         {
+            //           document.write("hello world.....");
+            //         },3000);
+                
+            //         // output will be showing after 3 secs
+            //         // output:- hello world...
+
+
+
+
+
+            // this is math object example
+            // let max=parseInt(prompt("enter the max value number:"));
+            // let min=parseInt(prompt("enter the min value number:"));
+
+
+            // let result=Math.floor(Math.random(max-min)+1)+min;
+            // document.write(`random values generate between ${max} and ${min} is :${result}`);
+
+
+            // we created current date object
+            // let x=new Date();
+            // console.log(x);
+
+
+            
+            // let greet = function ()
+            // {
+            //     console.log("hello world....");
+                
+            // };
+            // greet();
+
+
+
+    </script>
+
+</body>
+</html>

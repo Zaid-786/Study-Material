@@ -1,0 +1,21 @@
+
+/*below code to shown font-size into webpage  */
+p{
+    
+    font-size:20px;
+}
+
+
+
+
+/*below code to shown font-size into printpage by @media queries */
+@media print {
+   p{ 
+    font-size:50px;
+    color: blue;
+   }
+   /* img{
+        display:none;          when you applied display:noe;  property in this then when you printed page then image is disappeared  
+   } */
+
+}

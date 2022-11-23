@@ -1,0 +1,66 @@
+/* below styling of table one... */
+
+
+.table1 caption
+{
+    border:1px solid black;
+    font-size:30px;
+    /* caption-side: bottom;            in css, we used caption-side:bottom properties to give caption side on the bottom of the table  */
+
+}
+
+
+
+.table1
+{
+    margin: 100px;
+    border:1px solid black;
+    /* border-collapse:collapse;     in css, we used border-collapse properties to merge and collapse border of table */
+    width: 600px;
+    height: 300px;
+    
+    border-collapse: separate;    /*  in css, we used border-collapse: separate properties to seprated each block border of the table  */  
+    border-spacing:15px;            /*  in css, we used border-spacing properties to give each block border spacing of the table  */
+
+    /* empty-cells:hide;            /*  in css, we used empty-cells: hide; properties to hide block which is empty in the table  */         
+
+}
+
+.table1 th{
+    background-color:rgb(34, 238, 85);
+}
+
+
+.table1 td,th{
+    border:1px solid black;
+    text-align:center;
+    font-style: italic;
+} 
+
+
+
+
+
+/* below styling of table second ... */
+.table2 caption
+{
+    border:1px solid black;
+    font-size:30px
+}
+
+.table2{
+    margin:100px;
+    border:1px solid black;
+    border-collapse:collapse;
+    table-layout:fixed;             /* in css,we used table-layout properties to set table block according thier table of size */
+    width: 400pxs;
+
+}
+
+
+.table2 th,td
+{
+    border:1px solid black;
+    text-align:center;
+}
+

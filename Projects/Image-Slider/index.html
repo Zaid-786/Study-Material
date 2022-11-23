@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-Slider</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+
+<!-- main slider container -->
+<div class="slide-container">
+
+<!-- we have multiple slides in the main slider container -->
+    <div class="slide">
+        <img src="/images/leopard.jpg" alt="leopard image" >
+        <div class="caption">Caption Text 1</div>
+    </div>
+
+
+    <div class="slide">
+        <img src="/images/mountain.jpg" alt="mountain image">
+        <div class="caption">Caption Text 2</div>
+    </div>
+
+
+    <div class="slide">
+        <img src="/images/nature.jpg" alt="mountain image">
+        <div class="caption">Caption Text 3</div>
+    </div>
+
+
+
+    <div class="slide">
+        <img src="/images/twitter.jpeg" alt="mountain image">
+        <div class="caption">Caption Text 4</div>
+    </div>
+
+    <!-- we have two arrow span one is prev button and second is next button -->
+    <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
+    <span class="arrow next" onclick="controller(1)">&#10095;</span>
+
+</div>
+
+
+<script src="/script.js"></script>
+
+</body>
+</html>

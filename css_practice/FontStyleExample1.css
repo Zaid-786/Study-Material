@@ -1,0 +1,46 @@
+h1{
+   color:red;
+   font-weight:bold;
+}
+
+.formet1
+{
+   border: 1px solid black;
+
+   font-size:30px;          /* css font-size properties are used to give the size of the words */
+    
+   font-weight:300px;       /* css font-weight properties are used to give the weight(thickness) of the words   like(bold,normal,default etc. we can give 0 to 900 values) */
+    
+   font-style:italic;        /* css font-style properties are used to give style of the word  like(italic,bold,normal)*/
+}
+
+
+.formet2
+{
+    border: solid black;
+    margin-top: 20px;
+    font-size:30px;
+     
+    font-family: 'Raleway', Verdana, sans-serif;
+
+    /* In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted uppercase letters appears in a smaller font size than the original uppercase letters in the text. */
+      /* font-variant:uppercase; */
+
+
+}
+
+
+
+
+@font-face                       /*how to set download font and used to this font in paragraph through this syntax*/
+{
+   font-family: abc;
+   src: url("/font-style/Zado.ttf");
+}
+.formet3
+{
+   border: solid black;
+   margin-top: 20px;
+   font-size:30px;
+   font-family: abc;
+}
